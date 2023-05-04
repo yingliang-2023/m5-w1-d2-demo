@@ -9,6 +9,9 @@ class Car extends React.Component {
       };
     }
     //add changeColor function here
+    changeColor=() =>{
+      this.setState({ color: "blue" });
+    }
 
     render() {
       return (
@@ -19,7 +22,10 @@ class Car extends React.Component {
             {this.state.model}
             from {this.state.year}.
           </p>
-          
+          <button 
+          type="button" onClick={this.changeColor}>
+            Change Color
+            </button>
         </div>
       );
     }
