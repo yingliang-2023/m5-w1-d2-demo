@@ -9,4 +9,6 @@ class Football extends React.Component {
             <button onClick={this.shoot}>Take the shot!</button>
         )
     }
+
+}
 ReactDOM.render(<Football />, document.getElementById('root'));
